@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script defer src="{{ url_for('static', filename='js/global.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css' ) }}" />
+    <script src="https://kit.fontawesome.com/48e723b064.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/landing.js') }}"></script>
+
+    <title>Boilerplate.io</title>
+</head>
+<body>
+    <div class="top-container">
+        <button type="button" class="fa-solid fa-info info-toggle"></button> <!-- landing page only!!! -->
+        <button type="button" data-theme-toggle class="fa-regular fa-sun theme-toggle"></button>
+    </div>
+
+    <div class="main-container">
+        <h3 id="tagline">Let's Start Things Differently</h3>
+
+        <h1 id="headline">Develop Instantly, No Setup</h1>
+        <h3 id="featurelist">Boilerplates for <span>
+        <span class="typewrite" data-period="2000" data-type='["Websites", "AI/ML", "Mobile", "Desktop", "Anything", "CLIs"]'>
+                <span class="wrap"></span>
+            </span>
+        </span></h3>
+
+        <p id="explanation">Begin your next project with your entire codebase already ready to go. No setup, just plug and play.</p>
+        <a href="#" class="filled-btn">Get Started &nbsp;&nbsp;<i class="fa-solid fa-arrow-right right-arrow"></i></a>
+    </div>
+
+
+    <dialog> <!-- MODAL INFO POPUP -->
+      <button autofocus id="modal-close">x</button>
+      <p>
+          Lorem ispum dolor sit amet ur mom
+            <!-- TODO : MORE THINGS HERE (ie socials, info, etc.) -->
+      </p>
+    </dialog>
+</body>
+</html>
